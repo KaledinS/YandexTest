@@ -1,0 +1,25 @@
+import org.junit.*;
+
+public class RunTest {
+
+    @Before
+    public void beforeTest(){}
+
+    @Test
+    public void test(){
+        String string1 = "cтрока";
+        String string2 = "cтрока";
+        Assert.assertEquals(string1,string2);
+    }
+
+    @Test
+    public void badTest(){
+        String string1 = "cтрока";
+        String string2 = "cтрока1";
+        Assert.assertEquals(string1,string2);
+    }
+
+    @After
+    public void afterTest(){}
+
+}
